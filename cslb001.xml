@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Esta plantilla es para crear una especificación para la Comunidad
+de Software Libre de Bolivia. Puede ser convertida a diferentes
+formatos.
+Se ha elegido el RFC 2629 como base.
+Puede ser convertida como un borrador de Internet usando
+xml2rfc, que está disponible aquí: http://xml.resource.org. -->
+<!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+<!-- One method to get references from the online citation libraries.
+There has to be one entity for each item to be referenced. 
+An alternate method (rfc include) is described in the references. -->
+<!ENTITY RFC2119 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2119.xml">
+<!ENTITY RFC2629 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2629.xml">
+<!ENTITY RFC3552 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.3552.xml">
+<!ENTITY RFC5226 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5226.xml">
+]>
+<?xml-stylesheet type='text/xsl' href='rfc2629.xslt' ?>
+<!-- used by XSLT processors -->
+<!-- For a complete list and description of processing instructions (PIs), 
+please see http://xml.resource.org/authoring/README.html. -->
+<!-- Below are generally applicable Processing Instructions (PIs) that most I-Ds might want to use.
+(Here they are set differently than their defaults in xml2rfc v1.32) -->
+<?rfc strict="yes" ?>
+<!-- give errors regarding ID-nits and DTD validation -->
+<!-- control the table of contents (ToC) -->
+<?rfc toc="yes"?>
+<!-- generate a ToC -->
+<?rfc tocdepth="4"?>
+<!-- the number of levels of subsections in ToC. default: 3 -->
+<!-- control references -->
+<?rfc symrefs="yes"?>
+<!-- use symbolic references tags, i.e, [RFC2119] instead of [1] -->
+<?rfc sortrefs="yes" ?>
+<!-- sort the reference entries alphabetically -->
+<!-- control vertical white space 
+(using these PIs as follows is recommended by the RFC Editor) -->
+<?rfc compact="yes" ?>
+<!-- do not start each main section on a new page -->
+<?rfc subcompact="no" ?>
+<!-- keep one blank line between list items -->
+<!-- end of list of popular I-D processing instructions -->
+<rfc category="info" docName="cslb1" ipr="trust200902">
+  <!-- category values: std, bcp, info, exp, and historic ipr values:
+       trust200902, noModificationTrust200902,
+       noDerivativesTrust200902, or pre5378Trust200902 you can add the
+       attributes updates="NNNN" and obsoletes="NNNN" they will
+       automatically be output with "(if approved)" -->
+
+  <!-- ***** FRONT MATTER ***** -->
+
+  <front>
+    <!-- The abbreviated title is used in the page header - it is only necessary if the 
+         full title is longer than 39 characters -->
+
+    <title abbrev="Desarrollo de software libre">Desarrollo de software libre el el Estado Plurinacional de Bolivia</title>
+
+    <!-- add 'role="editor"' below for the editors if appropriate -->
+
+    <!-- Another author who claims to be an editor -->
+
+    <author fullname="Alejandro Salamanca" initials="A.S." role="editor"
+            surname="Salamanca">
+      <organization>CSLB</organization>
+      <address>
+        <postal>
+          <street>Av. Litoral # 501</street>
+          <city>La Paz</city>
+          <region>LP</region>
+          <country>BO</country>
+        </postal>
+        <phone>591 70618872</phone>
+        <email>alejandro@devenet.net</email>
+      </address>
+    </author>
+
+    <author fullname="Luis Rejas" initials="L.R." surname="Rejas">
+      <organization>CSLB</organization>
+      <address>
+        <postal>
+          <street></street>
+          <city>La Paz</city>
+          <region>LP</region>
+          <code></code>
+          <country>BO</country>
+        </postal>
+        <phone>591 </phone>
+        <email></email>
+      </address>
+    </author>
+
+    <author fullname="Yassir Alarcón" initials="Y.A." surname="Alarcón">
+      <organization>CSLB</organization>
+      <address>
+        <postal>
+          <street></street>
+          <city>La Paz</city>
+          <region>LP</region>
+          <code></code>
+          <country>BO</country>
+        </postal>
+        <phone>591 </phone>
+        <email></email>
+      </address>
+    </author>
+
+    <date year="2017" month="08" day="26" />
+
+    <area>General</area>
+
+    <workgroup>Comunidad de Software Libre de Bolivia</workgroup>
+
+    <keyword>CSLB</keyword>
+    <keyword>Comunidad de Software Libre de Bolivia</keyword>
+    <keyword>Software libre</keyword>
+    <keyword>Estado Plurinacional de Bolivia</keyword>
+    <keyword>Bolivia</keyword>
+    <keyword>Contrataciones estatales</keyword>
+    <keyword>Proyecto de software libre</keyword>
+    <keyword>Comité de requerimientos</keyword>
+
+    <abstract>
+      <t>Este documento proporciona información para el Estado y la
+      sociedad civil respecto de la forma de implementar el desarrollo
+      de software libre para uso en las diferentes instituciones
+      públicas.</t>
+    </abstract>
+  </front>
+
+  <middle>
+    <section title="Introducción">
+      <t>La contratación de empresas y personas para el desarrollo de
+      software, es una necesidad del Estado, como resultado de un
+      creciente número de actividades que pueden ser facilitadas con el
+      uso de la tecnología informática.</t>
+
+      <t>Este documento describe cómo establecer los requerimientos del
+      Estado para el uso de software y cómo se debe realizar la
+      construcción de software libre, con participación del
+      Estado. Finalmente, cómo el Estado puede adquirir e incorporar
+      ese software para el uso en sus dependencias.</t>
+
+      <t>En el documento se propone un procedimiento de desarrollo y
+      adquisición de software libre en Bolivia, cambiando la
+      adquisición de productos de software a la contratación de
+      servicios sobre software libre.</t>
+
+      <t>Este documento tiene tres objetivos:
+      <list style="numbers">
+        <t>Describir el proceso actual de contratación para el desarrollo
+        de software, según el marco jurídico existente.</t>
+        <t>Establecer las falencias que existen en el proceso de
+        contratación y en el software desarrollado, por usar el modelo
+        privativo.</t>
+        <t>Establecer una nueva metodología de identificación de
+        requerimientos, desarrollo de software libre y adquisición de
+        servicios.</t>
+      </list>
+      </t>
+      
+      <t>La discusión sobre las ramificaciones políticas derivadas del
+      uso de software libre para el Estado, queda fuera del alcance de
+      este documento. Simplemente se destaca que el uso de software
+      libre permitirá:
+      <list style="symbols">
+        <t>un mayor control del software que utilizan los servidores
+        públicos y el público en general, proporcionando mayor
+        seguridad a sus datos.</t>
+        <t></t>
+      </list>
+      </t>
+
+      <section title="Antecedentes">
+        <section anchor="simple_list" title="Proyectos de SL">
+        </section>
+
+        
+        <!-- <section anchor="Security" title="Security Considerations"> -->
+        <!--   <t>All drafts are required to have a security considerations section. -->
+        <!--   See <xref target="RFC3552">RFC 3552</xref> for a guide.</t> -->
+        <!-- </section> -->
+      </section>
+    </section>
+  </middle>
+  
+  <back>
+<!--    <references title="Normative References">
+      &RFC2119;
+
+      <reference anchor="min_ref">
+        <front>
+          <title>Minimal Reference</title>
+
+          <author initials="authInitials" surname="authSurName">
+            <organization></organization>
+          </author>
+
+          <date year="2017" />
+        </front>
+      </reference>
+    </references>
+
+    <references title="Informative References">
+      &RFC2629;
+
+      &RFC3552;
+
+      &RFC5226;
+
+      <reference anchor="DOMINATION"
+                 target="http://www.example.com/dominator.html">
+        <front>
+          <title>Ultimate Plan for Taking Over the World</title>
+
+          <author>
+            <organization>Mad Dominators, Inc.</organization>
+          </author>
+
+          <date year="1984" />
+        </front>
+      </reference>
+    </references>
+-->
+<!--
+    <section anchor="app-additional" title="Additional Stuff">
+      <t>This becomes an Appendix.</t>
+      </section>
+      -->
+  </back>
+</rfc>
